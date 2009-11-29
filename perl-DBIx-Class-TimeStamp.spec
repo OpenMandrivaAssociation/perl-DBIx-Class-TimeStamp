@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/DBIx/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::Accessor::Grouped)
+BuildRequires: perl(DBD::SQLite)
 BuildRequires: perl(DBIx::Class)
 BuildRequires: perl(DBIx::Class::DynamicDefault)
 BuildRequires: perl(DateTime)
