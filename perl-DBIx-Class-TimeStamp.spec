@@ -20,6 +20,7 @@ BuildRequires: perl(DateTime::Format::SQLite)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Time::HiRes)
 BuildRequires: perl(Time::Warp)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -32,11 +33,10 @@ update and create date and time based fields in a table.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -50,5 +50,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
