@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    DBIx::Class extension to update and create date and time based fields
 License:    GPL+ or Artistic
@@ -24,6 +24,8 @@ BuildRequires: perl(Time::Warp)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Requires: perl(DBIx::Class::DynamicDefault)
 
 %description
 Works in conjunction with InflateColumn::DateTime to automatically set
