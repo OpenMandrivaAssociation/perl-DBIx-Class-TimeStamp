@@ -1,9 +1,9 @@
 %define upstream_name    DBIx-Class-TimeStamp
-%define upstream_version 0.12
+%define upstream_version 0.13
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    DBIx::Class extension to update and create date and time based fields
 License:    GPL+ or Artistic
