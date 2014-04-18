@@ -23,6 +23,7 @@ BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Module::Find)
 BuildRequires:	perl(Time::HiRes)
 BuildRequires:	perl(Time::Warp)
+BuildRequires:	perl(strictures)
 
 BuildArch:	noarch
 
@@ -49,30 +50,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.140.0-2mdv2011.0
-+ Revision: 656899
-- rebuild for updated spec-helper
-
-* Mon Nov 08 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.140.0-1mdv2011.0
-+ Revision: 595099
-- update to new version 0.14
-
-* Fri Jul 16 2010 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2011.0
-+ Revision: 554167
-- update to 0.13
-
-* Mon Nov 30 2009 Jérôme Quelin <jquelin@mandriva.org> 0.120.0-2mdv2010.1
-+ Revision: 471678
-- adding missing requires:
-
-* Sun Nov 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.120.0-1mdv2010.1
-+ Revision: 471532
-- adding missing buildrequires:
-- tighten spec file
-- import perl-DBIx-Class-TimeStamp
-
-
-* Sun Nov 29 2009 cpan2dist 0.12-1mdv
-- initial mdv release, generated with cpan2dist
